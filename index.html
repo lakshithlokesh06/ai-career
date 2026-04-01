@@ -3,85 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Engineer Portfolio</title>
+<title>AI Career System</title>
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #020617);
+    background: #020617;
     color: #e2e8f0;
+    overflow-x: hidden;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
 }
-.hero p {
-    font-size: 1.2rem;
-    opacity: 0.8;
-}
-.btn {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 8px;
-    background: #38bdf8;
-    color: black;
+.typing {
+    color: #38bdf8;
     font-weight: bold;
-    transition: 0.3s;
-}
-.btn:hover {
-    background: #0ea5e9;
 }
 
 /* SECTION */
 section {
-    max-width: 1000px;
+    padding: 60px 20px;
+    max-width: 1100px;
     margin: auto;
-    padding: 50px 20px;
 }
 
-/* CARD */
+/* GLASS CARD */
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
     padding: 25px;
+    border-radius: 15px;
     margin-bottom: 25px;
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* FLOW */
+.flow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-/* TAGS */
-.tag {
-    display: inline-block;
-    padding: 6px 12px;
-    margin: 5px;
+.step {
+    width: 22%;
     background: #1e293b;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    opacity: 0.6;
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ANIMATION */
+.fade {
+    animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 </style>
 </head>
@@ -90,77 +87,51 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <h1>AI Engineer Portfolio</h1>
-    <p>Building intelligent, explainable AI systems with ML & LLMs</p>
-    <a href="#" class="btn">View My Work</a>
+    <h1>I build <span class="typing"></span></h1>
+    <p>AI systems that understand skills and predict careers</p>
+    <a href="https://github.com/lakshithlokesh06/career-recommendation-system" class="btn">View Code</a>
 </div>
 
 <!-- ABOUT -->
-<section>
-    <h2>👨‍💻 About Me</h2>
+<section class="fade">
+    <h2>🧠 The Idea</h2>
     <div class="card">
         <p>
-            I build AI systems that are not just powerful—but explainable and user-friendly.
-            My focus is on Machine Learning, Explainable AI (XAI), and LLM-powered applications.
+            What if AI could guide your career?
+            This system analyzes your skills and predicts the most suitable career path,
+            combining Machine Learning, Explainable AI, and LLM intelligence.
         </p>
     </div>
 </section>
 
-<!-- PROJECT -->
+<!-- FLOW -->
 <section>
-    <h2>🚀 Featured Project</h2>
-
-    <div class="card">
-        <h3>AI-Based Career Recommendation System</h3>
-        <p>
-            An intelligent system that predicts career paths based on user skills using machine learning,
-            enhanced with explainability and LLM-generated insights.
-        </p>
-
-        <div class="grid">
-            <div>
-                <h4>⚙️ Core Features</h4>
-                <ul>
-                    <li>Skill-based prediction</li>
-                    <li>Primary/secondary skill classification</li>
-                    <li>ML-powered recommendations</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>🧠 Intelligence Layer</h4>
-                <ul>
-                    <li>SHAP-inspired Explainable AI</li>
-                    <li>Skill impact analysis</li>
-                    <li>Transparent predictions</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>🤖 AI Enhancement</h4>
-                <ul>
-                    <li>Groq LLM integration</li>
-                    <li>Human-like explanations</li>
-                    <li>User-friendly insights</li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-        <a href="#" class="btn">Live Demo</a>
+    <h2>⚙️ How It Works</h2>
+    <div class="flow">
+        <div class="step">📝 Input Skills</div>
+        <div class="step">🧠 ML Prediction</div>
+        <div class="step">📊 Explainability</div>
+        <div class="step">🤖 AI Explanation</div>
     </div>
 </section>
 
-<!-- SKILLS -->
+<!-- FEATURES -->
 <section>
-    <h2>🛠 Skills</h2>
+    <h2>🚀 Features</h2>
+
     <div class="card">
-        <span class="tag">Python</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">Explainable AI</span>
-        <span class="tag">Streamlit</span>
-        <span class="tag">APIs</span>
-        <span class="tag">LLMs</span>
+        <h3>Skill-Based Prediction</h3>
+        <p>Analyzes 5 user skills and classifies them intelligently.</p>
+    </div>
+
+    <div class="card">
+        <h3>Explainable AI</h3>
+        <p>Shows how each skill impacts the prediction (High, Medium, Low).</p>
+    </div>
+
+    <div class="card">
+        <h3>LLM Integration</h3>
+        <p>Generates human-like explanations using Groq API.</p>
     </div>
 </section>
 
@@ -168,14 +139,35 @@ footer {
 <section>
     <h2>📬 Contact</h2>
     <div class="card">
-        <p>Email: your@email.com</p>
-        <p>GitHub: <a href="#">your-github-link</a></p>
+        <p>GitHub: <a href="https://github.com/lakshithlokesh06">lakshithlokesh06</a></p>
     </div>
 </section>
 
-<footer>
-    © 2026 AI Portfolio
-</footer>
+<script>
+const words = ["AI Systems", "Smart Predictions", "Explainable Models"];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+    currentWord = words[i];
+    document.querySelector(".typing").textContent =
+        currentWord.substring(0, j);
+
+    if (!isDeleting && j < currentWord.length) {
+        j++;
+    } else if (isDeleting && j > 0) {
+        j--;
+    } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) i = (i + 1) % words.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+type();
+</script>
 
 </body>
 </html>
