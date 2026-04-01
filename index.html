@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineer Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e2e8f0;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    background: #1e293b;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>AI Engineer Portfolio</h1>
+    <p>Building intelligent, explainable AI systems with ML & LLMs</p>
+    <a href="#" class="btn">View My Work</a>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>👨‍💻 About Me</h2>
+    <div class="card">
+        <p>
+            I build AI systems that are not just powerful—but explainable and user-friendly.
+            My focus is on Machine Learning, Explainable AI (XAI), and LLM-powered applications.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section>
+    <h2>🚀 Featured Project</h2>
+
+    <div class="card">
+        <h3>AI-Based Career Recommendation System</h3>
+        <p>
+            An intelligent system that predicts career paths based on user skills using machine learning,
+            enhanced with explainability and LLM-generated insights.
+        </p>
+
+        <div class="grid">
+            <div>
+                <h4>⚙️ Core Features</h4>
+                <ul>
+                    <li>Skill-based prediction</li>
+                    <li>Primary/secondary skill classification</li>
+                    <li>ML-powered recommendations</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>🧠 Intelligence Layer</h4>
+                <ul>
+                    <li>SHAP-inspired Explainable AI</li>
+                    <li>Skill impact analysis</li>
+                    <li>Transparent predictions</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>🤖 AI Enhancement</h4>
+                <ul>
+                    <li>Groq LLM integration</li>
+                    <li>Human-like explanations</li>
+                    <li>User-friendly insights</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <a href="#" class="btn">Live Demo</a>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>🛠 Skills</h2>
+    <div class="card">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Explainable AI</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">APIs</span>
+        <span class="tag">LLMs</span>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>📬 Contact</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>GitHub: <a href="#">your-github-link</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 AI Portfolio
+</footer>
+
+</body>
+</html>
